@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Cool Crystals</title>
+      <link rel="shortcut icon" href="image/favicon.ico" type="image/px-icon">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="crystalstore.css">
+      <script src="store.js" async></script>
+   </head>
+   <body>
+      <header>
+         <img src="image/logo.png" alt="logo of Cool Crystals LLC" class="logo">
+         <nav>
+            <ul>
+               <li>
+                  <a href="#about">About</a>
+               </li>
+               <li>
+                  <a href="#shop">Shop</a>
+               </li>
+               <li>
+                  <a href="#contact">Contact Us</a>
+               </li>
+            </ul>
+         </nav>
+         <button id="toggle" onclick="myFunction()"><img src="image/togglemode.png" alt="icon for light and dark mode functionality." id="toggleimg"></button>
+         <img src="image/headerimage.jpg" alt="Photo of many natural rocks." class="rocks">
+         <!-- Shutterstock Image -->
+      </header>
+      <main>
+         <h1>Beginning of Content</h1>
+         <section id="about">
+            <div class="about">
+               <h2>About Us</h2>
+               <p>Our journey began as a small shop selling crystals at the local farmer's market with the goal of one day of selling our crystals to a larger customer base.</p>
+               <br>
+               <p>Thanks to our large customer demand we grew thresfold in the last two years and now work with the best local suppliers to give our customers the quality they desire.Thank you for supporting your local small business.</p>
+               <br>
+               <h2 class="perk">Perks of Our Rocks</h2>
+               <ul class="listofperk">
+                  <li>All our products are ethically sourced</li>
+                  <li>5% of your purchase goes to charity</li>
+                  <li>15 years of expierence</li>
+                  <li>Every piece is unique</li>
+               </ul>
+            </div>
+            <div class="farmer">
+               <img src="image/farmersmarket.jpeg" alt="Small crystal shop at the farmer's market." class="aboutphoto">
+               <!-- Shutterstock Image -->
+            </div>
+         </section>
+         <hr>
+         <section class="products-list">
+            <h2 id="shop">Shop Our Current Inventory</h2>
+            <br>
+            <span class="products">
+               <!-- render products here -->
+            </span>
+            <div class="cart">
+               <h3>Shopping Cart</h3>
+               <div class="cart-items">
+                  <p>Inventory is diplay from Javascript</p>
+               </div>
+               <br><br>
+               <div class="cart-footer">
+                  <span class="subtotal"></span><br>
+                  <span class="taxes"></span><br>
+                  <span class="shipping"></span><br>
+                  <span class="grandtotal"></span><br>
+                  <span class="checkout" id="checkout">
+                  <button class="checkk" onclick="checkout()">Proceed to checkout</button>
+                  </span>
+                  <!-- <button type = "reset" value = "Reset"> Reset</button> -->
+               </div>
+            </div>
+         </section>
+         <section id="contact">
+            <img src="image/contactus.jpg" alt="Picture of a man pointing to a contact us sign." class="contactphoto"><br>
+            <!-- Shutterstock Image -->
+            <h4>Question or comments? Contacts us, we'd love to hear from you!</h4>
+            <br>
+            <form onsubmit ="return validateForm()">
+               <label for="fname"> First Name* </label>
+               <input type = "text" id = "fname"> 
+               <span id = "blankMsg" style="color:red"> </span> <br>
+               <label for="lname"> Last Name* </label>
+               <input type = "text" id = "lname"> 
+               <span id = "blankMsg2" style="color:red"> </span> <br>
+               <label for="phonenumber"> Phone* </label>
+               <input type ="tel" id = "phonenumber"> <span id = "message1" style="color:red"> </span> <br>
+               <label for="email"> Email* </label>
+               <input type = "text" id = "email" autocomplete="off"> 
+               <span id = "message2" style="color:red"> </span> <br>
+               <fieldset>
+                  <legend>Preferred Method of Contact</legend>
+                  <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton" checked>
+                  <label for="radiobutton">Email</label>
+                  <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton2"
+                     value="option2">
+                  <label for="radiobutton2">Phone</label>
+               </fieldset>
+               <label for="comment" class="commentsomething">Comment*</label>
+               <br>
+               <textarea id="comment" name="comment"  ></textarea>
+               <span id = "message4" style="color:red"> </span> <br>
+               <input type = "submit" value = "Submit">
+            </form>
+         </section>
+      </main>
+      <footer>
+         <p>Copyright &#169; Cool Crystals LLC</p>
+      </footer>
+   </body>
+</html>

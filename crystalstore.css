@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+#about {
+    line-height: 23px;
+    display: flex;
+    padding-bottom: 120px;
+    margin: 60px;
+}
+html {
+    display: table;
+    margin: auto;
+    max-width: 1280px;
+}
+header {
+    padding-bottom: 60px;
+}
+.rocks {
+    width: 100vw;
+}
+body {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+p, .listofperk {
+    list-style: circle;
+    font-size: 20px;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+h1 {
+    font-size: 60px;
+}
+.perk {
+    padding-top: 30px;
+}
+h2 {
+    margin-left: 20px;
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo {
+    width: 300px;
+    padding-top: 10px;
+    margin-bottom: -30px;
+}
+.aboutphoto {
+    width: 450px;
+    height: 650px;
+}
+nav {
+    padding-bottom: 10px;
+    padding-left: 45%;
+    padding-top: 10px;
+}
+nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+#contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 130px;
+}
+h3 {
+    margin-left: 52px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.commentsomething{
+    padding-top: 20px;
+    margin-bottom: -14px;
+}
+fieldset {
+    border-radius: 6px;
+    padding-bottom: 10px;
+    border: solid black;
+    width: 600px;
+}
+input[type="submit"] {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+label {
+    width: 510px;
+    text-align: left;
+}
+.page-title {
+    padding-bottom: 40px;
+}
+input{
+    width: 400px;
+}
+div.cart{
+    margin-top: 70px;
+}
+div.cart-item{
+    background-color: #d5d2d2a7;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.products-list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.products {
+    margin-left: 30px;
+    padding-top: 68px;
+    padding-bottom: 65px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 3fr);
+    grid-gap: 10px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+a:hover {
+    cursor: pointer;
+    background-color: rgb(25, 131, 117);
+    color: aliceblue;
+    border-radius: 20%;
+    padding: 20px;
+}
+button:hover {
+    background-color: rgb(254, 208, 124);
+    color: white;
+    cursor: pointer;
+}
+.contactphoto {
+    mask-image: linear-gradient(2deg, rgba(0, 0, 0, 1), transparent 97%);
+    -webkit-mask-image: linear-gradient(2deg, rgba(0, 0, 0, 1), transparent 97%);
+    clip-path: polygon(0 0, 100% 0%, 100% 69%, 50% 100%, 0 69%);
+    width: 60%;
+    height: 430px;
+}
+form {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shoph2 {
+    padding-left: 40px;
+}
+input#phonemethod, input#emailmethod {
+    margin-bottom: -20px;
+}
+label {
+    margin-right: -110px;
+}
+legend {
+    margin-bottom: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+}
+.cart{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row-img {
+    flex-basis: 33.33%;
+}
+.row-img img {
+    max-width: 100%;
+}
+.cart-item p, .cart-item h2 {
+    margin: 0;
+    flex-basis: 33.33%;
+    text-align: center;
+}
+button{
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+.cart-item button {
+    flex-basis: 33.33%;
+    text-align: right;
+}
+#shop {
+    margin-left: 50px;
+    padding-top: 60px;
+    margin-bottom: -40px;
+}
+.dark-mode {
+    background-color: gray;
+    color: white;
+}
+#toggle{
+    -webkit-border-radius: 50px;
+	border-radius: 3px 38px 34px 4px;
+background-color: black;
+    margin-right: -600px;
+    position: absolute;
+    border: 2px solid cadetblue;
+}
+#toggle:active{
+background-color: rgb(254, 254, 121);
+}
+#toggleimg{
+	background:rgb(254, 254, 121);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    width: 30px 
+}
+textarea{
+    width: 400px;
+}
+footer {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100vw;
+    background-color: cadetblue;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+h1{
+    display: none;
+}
